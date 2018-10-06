@@ -49,7 +49,7 @@ Any of the following is functionally equivalent::
     response = send_file(open(fname), attachment_filename=fname)
     response.set_etag(...)
 
-The reason for this is that some file-like objects have a invalid or even
+The reason for this is that some file-like objects have an invalid or even
 misleading ``name`` attribute. Silently swallowing errors in such cases was not
 a satisfying solution.
 
@@ -198,7 +198,7 @@ applications with Flask.  Because we want to make upgrading as easy as
 possible we tried to counter the problems arising from these changes by
 providing a script that can ease the transition.
 
-The script scans your whole application and generates an unified diff with
+The script scans your whole application and generates a unified diff with
 changes it assumes are safe to apply.  However as this is an automated
 tool it won't be able to find all use cases and it might miss some.  We
 internally spread a lot of deprecation warnings all over the place to make
@@ -215,15 +215,15 @@ good.
 To apply the upgrade script do the following:
 
 1.  Download the script: `flask-07-upgrade.py
-    <https://raw.githubusercontent.com/pallets/flask/master/scripts/flask-07-upgrade.py>`_
+    <https://raw.githubusercontent.com/pallets/flask/0.12.3/scripts/flask-07-upgrade.py>`_
 2.  Run it in the directory of your application::
 
-        python flask-07-upgrade.py > patchfile.diff
+        $ python flask-07-upgrade.py > patchfile.diff
 
 3.  Review the generated patchfile.
 4.  Apply the patch::
 
-        patch -p1 < patchfile.diff
+        $ patch -p1 < patchfile.diff
 
 5.  If you were using per-module template folders you need to move some
     templates around.  Previously if you had a folder named :file:`templates`
