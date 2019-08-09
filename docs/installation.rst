@@ -6,7 +6,7 @@ Installation
 Python Version
 --------------
 
-We recommend using the latest version of Python 3. Flask supports Python 3.4
+We recommend using the latest version of Python 3. Flask supports Python 3.5
 and newer, Python 2.7, and PyPy.
 
 Dependencies
@@ -25,11 +25,11 @@ These distributions will be installed automatically when installing Flask.
 * `Click`_ is a framework for writing command line applications. It provides
   the ``flask`` command and allows adding custom management commands.
 
-.. _Werkzeug: http://werkzeug.pocoo.org/
-.. _Jinja: http://jinja.pocoo.org/
-.. _MarkupSafe: https://pypi.org/project/MarkupSafe/
-.. _ItsDangerous: https://pythonhosted.org/itsdangerous/
-.. _Click: http://click.pocoo.org/
+.. _Werkzeug: https://palletsprojects.com/p/werkzeug/
+.. _Jinja: https://palletsprojects.com/p/jinja/
+.. _MarkupSafe: https://palletsprojects.com/p/markupsafe/
+.. _ItsDangerous: https://palletsprojects.com/p/itsdangerous/
+.. _Click: https://palletsprojects.com/p/click/
 
 Optional dependencies
 ~~~~~~~~~~~~~~~~~~~~~
@@ -91,12 +91,12 @@ On Windows:
 
     $ py -3 -m venv venv
 
-If you needed to install virtualenv because you are on an older version of
-Python, use the following command instead:
+If you needed to install virtualenv because you are using Python 2, use
+the following command instead:
 
 .. code-block:: sh
 
-    $ virtualenv venv
+    $ python2 -m virtualenv venv
 
 On Windows:
 

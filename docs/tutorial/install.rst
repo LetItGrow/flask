@@ -70,7 +70,7 @@ files.
 See the `official packaging guide`_ for another explanation of the files
 and options used.
 
-.. _official packaging guide: https://packaging.python.org/tutorials/distributing-packages/
+.. _official packaging guide: https://packaging.python.org/tutorials/packaging-projects/
 
 
 Install the Project
@@ -108,6 +108,7 @@ You can observe that the project is now installed with ``pip list``.
 
 Nothing changes from how you've been running your project so far.
 ``FLASK_APP`` is still set to ``flaskr`` and ``flask run`` still runs
-the application.
+the application, but you can call it from anywhere, not just the
+``flask-tutorial`` directory.
 
 Continue to :doc:`tests`.
